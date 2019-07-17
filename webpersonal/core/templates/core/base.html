@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html><head>
+	<meta name="generator" content="Hugo 0.54.0" />
+  <title>{% block title %}{% endblock %}|Erick Casanova</title>
+
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+    {% load static %}
+  <link defer rel="stylesheet" href="{% static 'core/css/simple.css' %}" />
+  <link defer href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/darcula.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body><center>
+  <div class="head-title-wrapper">
+    <a href="{% url 'home' %}" class="head-title">Erick Casanova</a>
+    <hr/>
+    <div style="title-wrapper">
+      <a class="title" href="{% url 'home' %}">Home</a>
+      <a class="title" href="{% url 'blog' %}">Blog</a>
+      <a class="title" href="{% url 'resumen' %}">Resume</a>  
+    </div>
+  </div>
+</center>
+
+{% block content %}{% endblock %}
+<center>
+  <footer>
+    <div class="footer-list">
+      <div class="footer-item">
+        <a href="https://github.com/erickcasita"><i class="fa fa-github"></i></a>
+      </div>
+      <div class="footer-item">
+        <a href="https://www.youtube.com/channel/UC8hkaTrGV5bUkV5PW3D65NQ"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+</center></body>
+</html>

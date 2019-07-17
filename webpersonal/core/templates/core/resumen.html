@@ -1,0 +1,130 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}Resume{% endblock %}
+{% block content %}
+<div id="content">
+
+<h1 class="title">Resume</h1>
+<div class="resume-description">
+    <p><strong>Esta es una versión HTML</strong>. Para interactuar mejor, <a href="#">Aquí</a> puedes descargar una <strong>versión en PDF</strong>.</p>
+  </div>
+  <fieldset class="resume-fieldset fieldset-experience">
+    <legend>Experincia</legend>
+    <div class="resume-section resume-experience">
+      <details>
+        <summary>2018 - 2019 Servicio Social: Instituto Tecnologíco Superior de San Andrés Tuxtla</summary>
+        <p>Desarrollando actividades como: Limpieza y mantenimiento a equipos de cómputo, instalación de sistemas operativos, etc.</p>
+      </details>
+      <details>
+        <summary>2019 - Presente Residencias Profesionales: Instituto Tecnologíco Superior de San Andrés Tuxtla</summary>
+        <p>Proyecto: Desarollo de un prototipo de software para validación de firmas dígitales.</p>
+      </details>
+    </div>
+  </fieldset>
+   <fieldset class="resume-fieldset fieldset-programming">
+     <legend>Lenguajes de Programación</legend>
+     <div class="resume-section resume-programming">
+       <ul class="resume-list">
+         <li class="resume-list-item resume-programming-item"><label><strong>Python</strong></label><progress value="90" max="100">90%</progress> 90%</li>
+         <li class="resume-list-item resume-programming-item"><label><strong>Java</strong></label><progress value="60" max="100">60%</progress> 60%</li>
+         <li class="resume-list-item resume-programming-item"><label><strong>C</strong></label><progress value="50" max="100">50%</progress> 50%</li>
+         <li class="resume-list-item resume-programming-item"><label><strong>PHP</strong></label><progress value="80" max="100">80%</progress> 80%</li>
+       </ul>
+     </div>
+   </fieldset>
+   <fieldset class="resume-fieldset fieldset-programming">
+     <legend>Sistemas Operativos</legend>
+     <div class="resume-section resume-programming">
+       <ul class="resume-list">
+         <li class="resume-list-item resume-programming-item"><label><strong>GNU/Linux</strong></label><progress value="70" max="100">70%</progress> 70%</li>
+         <li class="resume-list-item resume-programming-item"><label><strong>Windows</strong></label><progress value="100" max="100">100%</progress> 100%</li>
+       </ul>
+     </div>
+   </fieldset>
+   <fieldset class="resume-fieldset fieldset-skills">
+     <legend>Habilidades</legend>
+    <div class="resume-section resume-skills">
+      <details>
+        <summary>Desarrollo Web Backend</summary>
+        <ul class="resume-list">
+          <li>Python Django</li>
+          <li>PHP</li>
+        </ul>
+      </details>
+       <details>
+        <summary>Base de Datos</summary>
+        <ul class="resume-list">
+          <li>Mysql</li>
+          <li>SQL</li>
+          <li>SQLite</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Desarollo de software</summary>
+        <ul class="resume-list">
+          <li>Python</li>
+          <li>Java</li>
+        </ul>
+      </details>
+    </div>
+   </fieldset>
+    <fieldset class="resume-fieldset fieldset-courses">
+      <legend>Cursos</legend>
+    <div class="resume-section resume-courses">
+       <details>
+         <summary>Diseño de Interfaces</summary>
+        <ul class="resume-list">
+          <li class="resume-list-item resume-courses-item">Adobe XD: Aprende a crear prototipos profesionales desde 0.</li>
+        </ul>
+       </details>
+       <details>
+         <summary>Desarrollo Web</summary>
+        <ul class="resume-list">
+          <li class="resume-list-item resume-courses-item">Curso Práctico de Django: Aprende Creando 3 Webs.</li>
+        </ul>
+        <ul class="resume-list">
+          <li class="resume-list-item resume-courses-item">Ingeniería de Software con PHP, HTML5 y Material Desing.</li>
+        </ul>
+        <ul class="resume-list">
+          <li class="resume-list-item resume-courses-item">PHP7 y MYSQL: El Curso Completo, Práctico y Desde 0.</li>
+        </ul>
+        <ul class="resume-list">
+          <li class="resume-list-item resume-courses-item">Bootstrap 4! Framework Aprende de 0 a 100.</li>
+        </ul>
+        <ul class="resume-list">
+          <li class="resume-list-item resume-courses-item">Aprende a crear webs desde cero con HTML y CSS.</li>
+        </ul>
+       </details>
+       <details>
+         <summary>Lenguajes de programación</summary>
+        <ul class="resume-list">
+          <li class="resume-list-item resume-courses-item">Curso Maestro de Python 3: Aprende desde 0.</li>
+        </ul>
+       </details>
+    </div>
+    </fieldset>
+    <fieldset class="resume-fieldset fieldset-education">
+      <legend>Education</legend>
+      <div class="resume-section resume-education">
+         <details>
+        <summary>2011 - 2013: Salvador Díaz Mirón (Secundaria)</summary>
+        </details>
+        <details>
+        <summary>2013 - 2015: Colegio de Bachilleres del Estado de Veracruz (Bachillerato)</summary>
+        </details>
+         <details>
+        <summary>2016 - 2020: Ing. Informática -- Instituto Tecnológico Superior de San Andrés Tuxtla (Universidad)</summary>
+        </details>
+      </div>
+    </fieldset>
+    <fieldset class="resume-fieldset fieldset-languages">
+    <legend>Idiomas</legend>
+    <div class="resume-section resume-languages">
+      <ul class="resume-list">
+        <li class="resume-list-item">Español: Nativo</li>
+        
+      </ul>
+    </div>
+  </fieldset>
+  </div><center>
+{% endblock %}
